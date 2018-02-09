@@ -330,15 +330,20 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: photoshop 2s ease;
   	-webkit-animation: photoshop 2s ease;
 }
-.illustrator {
-  	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+.dotnet {
+    width: 65%;
+    -moz-animation: dotnet 2s ease;
+    -webkit-animation: dotnet 2s ease;
 }
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+.aspnet {
+    width: 65%;
+    -moz-animation: aspnet 2s ease;
+    -webkit-animation: aspnet 2s ease;
+}
+.javascript {
+    width: 40%;
+    -moz-animation: javascript 2s ease;
+    -webkit-animation: javascript 2s ease;
 }
 .css {
   	width: 90%;
@@ -346,12 +351,12 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: css 2s ease;
 }
 .html5 {
-  	width: 80%;
+  	width: 90%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
 .jquery {
-  	width: 50%;
+  	width: 40%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
