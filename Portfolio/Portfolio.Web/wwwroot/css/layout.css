@@ -336,6 +336,16 @@ ul#nav li.current a { color: #F06000; }
     -moz-animation: dotnet 2s ease;
     -webkit-animation: dotnet 2s ease;
 }
+.docker {
+	width: 65%;
+	-moz-animation: dotnet 2s ease;
+	-webkit-animation: dotnet 2s ease;
+}
+.dockerswarm {
+	width: 40%;
+	-moz-animation: dotnet 2s ease;
+	-webkit-animation: dotnet 2s ease;
+}
 .entity {
     width: 50%;
     -moz-animation: entity 2s ease;
