@@ -1,10 +1,10 @@
-﻿namespace Portfolio.Web.Controllers
-{
-    using Microsoft.AspNetCore.Mvc;
-    using Portfolio.Web.Models;
-    using System.Diagnostics;
+﻿using Microsoft.AspNetCore.Mvc;
+using Portfolio.Web.Models;
+using System.Diagnostics;
 
-    public class HomeController : Controller
+namespace Portfolio.Web.Controllers
+{
+      public class HomeController : Controller
     {
         public IActionResult Index()
         {
@@ -32,7 +32,7 @@
 
         public IActionResult DownloadResume()
         {
-            return File("~/Resume/DimitarNikolovResumeFebruary2018.pdf", "application/pdf");
+            return File("~/Resume/Dimitar_Nikolov_Resume_August2024.pdf", "application/pdf");
         }
     }
 }
