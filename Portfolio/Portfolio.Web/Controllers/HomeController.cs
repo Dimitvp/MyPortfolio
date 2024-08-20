@@ -32,7 +32,7 @@ namespace Portfolio.Web.Controllers
 
         public IActionResult DownloadResume()
         {
-            return File("~/Resume/Dimitar_Nikolov_Resume_August2024.pdf", "application/pdf");
+            return File("~/Resume/Dimitar_Nikolov_Resume_20082024.pdf", "application/pdf");
         }
     }
 }
