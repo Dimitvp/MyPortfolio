@@ -1037,3 +1037,22 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+
+/* Skill bar: LLMs */
+.llm {
+   width: 70%;
+   animation: llm 2s ease;
+}
+@keyframes llm {
+   0%   { width: 0px; }
+   100% { width: 70%; }
+}
+
+/* Contact form honeypot, hidden from people */
+#contactForm .contact-website {
+   position: absolute;
+   left: -10000px;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+}
