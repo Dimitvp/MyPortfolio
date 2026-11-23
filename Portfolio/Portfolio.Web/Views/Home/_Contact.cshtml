@@ -7,31 +7,36 @@
         </div>
         <div class="ten columns">
             <p class="lead">
-                I`haven't activated this option yet but I will do it soon!<br />
-                If you want me to be part of your team, work together on projects or just chat with me, please send me an e-mail.
+                If you want me to be part of your team, work together on projects or just chat with me,
+                send me a message with the form below.
             </p>
         </div>
     </div>
     <div class="row">
         <div class="eight columns">
             <!-- form -->
-            <form action="" method="post" id="contactForm" name="contactForm">
+            <form action="/contact" method="post" id="contactForm" name="contactForm">
+                @Html.AntiForgeryToken()
                 <fieldset>
                     <div>
                         <label for="contactName">Name <span class="required">*</span></label>
-                        <input type="text" value="" size="35" id="contactName" name="contactName">
+                        <input type="text" value="" size="35" id="contactName" name="contactName" maxlength="100" required autocomplete="name">
                     </div>
                     <div>
                         <label for="contactEmail">Email <span class="required">*</span></label>
-                        <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                        <input type="email" value="" size="35" id="contactEmail" name="contactEmail" maxlength="200" required autocomplete="email">
                     </div>
                     <div>
                         <label for="contactSubject">Subject</label>
-                        <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                        <input type="text" value="" size="35" id="contactSubject" name="contactSubject" maxlength="200">
                     </div>
                     <div>
-                        <label for="contactMessage">Message <span class="required">*</span></label>
-                        <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                        <label for="contactMessageText">Message <span class="required">*</span></label>
+                        <textarea cols="50" rows="15" id="contactMessageText" name="contactMessageText" maxlength="5000" required></textarea>
+                    </div>
+                    <div class="contact-website" aria-hidden="true">
+                        <label for="website">Website</label>
+                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
                     </div>
                     <div>
                         <button class="submit">Submit</button>
@@ -42,7 +47,7 @@
                 </fieldset>
             </form> <!-- Form End -->
             <!-- contact-warning -->
-            <div id="message-warning"> Error boy</div>
+            <div id="message-warning"></div>
             <!-- contact-success -->
             <div id="message-success">
                 <i class="fa fa-check"></i>Your message was sent, thank you!<br>
